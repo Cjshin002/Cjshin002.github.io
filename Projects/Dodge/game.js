@@ -14,10 +14,9 @@ function setup(){
     isGameOver = false;
     createCanvas(256, 256);
     player = createSprite(width/2, height-(playerImage.height/2), 0,0);
-    player.addImage(playerImage);
     enemy = createSprite(width/2, 0, 0, 0);
     enemy.addImage(enemyImage);
-    enemy.rotationSpeed = 4.0;
+    enemy.rotationSpeed = 1000.0;
 }
 
 function draw(){
